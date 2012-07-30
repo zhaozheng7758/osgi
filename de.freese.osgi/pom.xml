@@ -17,11 +17,19 @@
 
 	<name>${project.artifactId}</name>
 	<description>Beispiel von OSGI-Modulen.</description>
+	<url>https://github.com/tfreese/osgi</url>
+	<inceptionYear>2012</inceptionYear>	
 
 	<modules>
 		<module>de.freese.osgi.service</module>
 		<module>de.freese.osgi.activator</module>
 		<module>de.freese.osgi.maven</module>
 	</modules>
+	
+	<scm>
+		<url>${project.url}</url>
+		<connection>scm:git:git://github.com/tfreese/osgi.git</connection>
+		<developerConnection>scm:git:https://github.com/tfreese/osgi.git</developerConnection>
+	</scm>	
 
 </project>
