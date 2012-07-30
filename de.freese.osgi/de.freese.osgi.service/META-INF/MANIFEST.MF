@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: de.freese.osgi.service
+Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-Name: osgi-service
+Bundle-Vendor: Tommy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: de.freese.osgi.service.api;version="0.0.1"
+Import-Package: org.osgi.framework
+Spring-Context: classpath:META-INF/spring/osgitest-context.xml,classpath:META-INF/spring/osgitest-context-osgi.xml;create-asynchronously:=false;wait-for-dependencies:=true;publish-context:=false

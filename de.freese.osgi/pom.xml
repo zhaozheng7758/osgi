@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.freese</groupId>
+		<artifactId>maven-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>de.freese.osgi</groupId>
+	<artifactId>osgi-parent</artifactId>
+	<packaging>pom</packaging>
+
+	<name>${project.artifactId}</name>
+	<description>Beispiel von OSGI-Modulen.</description>
+
+	<modules>
+		<module>de.freese.osgi.service</module>
+		<module>de.freese.osgi.activator</module>
+		<module>de.freese.osgi.maven</module>
+	</modules>
+
+</project>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: osgi-activator
+Bundle-SymbolicName: de.freese.osgi.activator
+Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-Activator: de.freese.osgi.activator.Activator
+Import-Package: org.osgi.framework;version="1.6.0",
+ org.osgi.util.tracker,
+ org.osgi.service.log
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: de.freese.osgi.service;bundle-version="0.0.1"
+Bundle-Vendor: Tommy
