@@ -28,12 +28,12 @@ public class Activator implements BundleActivator
 	/**
 	 *
 	 */
-	private ServiceTracker serviceTracker = null;
+	private ServiceTracker<IMyService, IMyService> serviceTracker = null;
 
 	/**
 	 *
 	 */
-	private ServiceTracker logServiceTracker = null;
+	private ServiceTracker<LogService, LogService> logServiceTracker = null;
 
 	/**
 	 * Erstellt ein neues {@link Activator} Object.
@@ -47,18 +47,21 @@ public class Activator implements BundleActivator
 	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
 	 */
 	@Override
-	public void start(final BundleContext bundleContext) throws Exception
+	public void start(final BundleContext context) throws Exception
 	{
-		Activator.context = bundleContext;
-		this.logServiceTracker = new ServiceTracker(context, LogService.class, null);
+		Activator.context = context;
+		this.logServiceTracker = new ServiceTracker<>(context, LogService.class, null);
 		this.logServiceTracker.open();
-		LogService logService = (LogService) this.logServiceTracker.getService();
+		LogService logService = this.logServiceTracker.getService();
+
+		// // Service registrieren.
+		// context.registerService(IMyService.class.getName(), new MyServiceImpl(), null);
 
 		logService.log(LogService.LOG_ERROR, "Activator.start()");
 
-		this.serviceTracker = new ServiceTracker(bundleContext, IMyService.class, null);
+		this.serviceTracker = new ServiceTracker<>(context, IMyService.class, null);
 		this.serviceTracker.open();
-		IMyService service = (IMyService) this.serviceTracker.getService();
+		IMyService service = this.serviceTracker.getService();
 
 		if (service != null)
 		{
@@ -80,7 +83,7 @@ public class Activator implements BundleActivator
 	{
 		Activator.context = null;
 
-		LogService logService = (LogService) this.logServiceTracker.getService();
+		LogService logService = this.logServiceTracker.getService();
 		logService.log(LogService.LOG_ERROR, "Activator.stop()");
 		System.err.println("Activator.stop()");
 

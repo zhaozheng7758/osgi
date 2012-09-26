@@ -8,3 +8,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: de.freese.osgi.service.api;version="0.0.1"
 Import-Package: org.osgi.framework
 Spring-Context: classpath:META-INF/spring/osgitest-context.xml,classpath:META-INF/spring/osgitest-context-osgi.xml;create-asynchronously:=false;wait-for-dependencies:=true;publish-context:=false
+Bundle-Activator: de.freese.osgi.service.Activator
