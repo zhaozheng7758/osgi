@@ -2,7 +2,7 @@
 <launchConfiguration type="org.eclipse.pde.ui.EquinoxLauncher">
 <booleanAttribute key="append.args" value="true"/>
 <booleanAttribute key="automaticAdd" value="true"/>
-<booleanAttribute key="automaticValidate" value="false"/>
+<booleanAttribute key="automaticValidate" value="true"/>
 <stringAttribute key="bootstrap" value=""/>
 <stringAttribute key="checked" value="[NONE]"/>
 <booleanAttribute key="clearConfig" value="false"/>
@@ -21,5 +21,5 @@
 <booleanAttribute key="tracing" value="false"/>
 <booleanAttribute key="useCustomFeatures" value="false"/>
 <booleanAttribute key="useDefaultConfigArea" value="true"/>
-<stringAttribute key="workspace_bundles" value="de.freese.osgi.activator@3:default,de.freese.osgi.service@2:default,de.freese.osgi.slf4j@1:default"/>
+<stringAttribute key="workspace_bundles" value="de.freese.osgi.activator*0.0.1.SNAPSHOT@3:default,de.freese.osgi.service@2:default,de.freese.osgi.slf4j@1:default"/>
 </launchConfiguration>

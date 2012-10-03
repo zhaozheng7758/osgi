@@ -4,6 +4,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.log.LogService;
+import org.slf4j.LoggerFactory;
 import org.slf4j.impl.OSGILogFactory;
 
 /**
@@ -38,7 +39,9 @@ public class Activator implements BundleActivator
 	@Override
 	public void start(final BundleContext context) throws Exception
 	{
+		// StaticLoggerBinder.getSingleton();
 		OSGILogFactory.initOSGI(context);
+		LoggerFactory.getLogger(getClass());
 
 		ServiceReference<LogService> ref = context.getServiceReference(LogService.class);
 		LogService logService = context.getService(ref);
