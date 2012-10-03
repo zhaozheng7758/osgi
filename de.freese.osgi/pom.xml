@@ -23,6 +23,7 @@
 	<modules>
 		<module>de.freese.osgi.service</module>
 		<module>de.freese.osgi.activator</module>
+		<module>de.freese.osgi.slf4j</module>
 		<module>de.freese.osgi.maven</module>
 	</modules>
 	
