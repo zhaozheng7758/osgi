@@ -11,11 +11,11 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>osgi-activator</artifactId>
+	<artifactId>osgi-slf4j</artifactId>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
-	<description>Beispiel von OSGI-Modulen.</description>
+	<description>OSGI-Modul für SLF4J.</description>
 
 	<build>
 		<plugins>
@@ -34,22 +34,16 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>osgi-service</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>osgi-slf4j</artifactId>
-			<version>${project.version}</version>
-		</dependency>				
-		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.compendium</artifactId>
+		</dependency>		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>		
 	</dependencies>
 

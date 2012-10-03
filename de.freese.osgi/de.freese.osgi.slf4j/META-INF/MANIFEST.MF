@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: de.freese.osgi.slf4j
+Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-Name: osgi-slf4j
+Bundle-Vendor: Tommy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework,
+ org.osgi.service.log
+Export-Package: org.slf4j.impl
+Require-Bundle: slf4j.api;bundle-version="1.7.1"
+Bundle-Activator: de.freese.osgi.slf4j.Activator
