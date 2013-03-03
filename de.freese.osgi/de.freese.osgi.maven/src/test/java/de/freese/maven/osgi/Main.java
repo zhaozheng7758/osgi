@@ -30,6 +30,7 @@ public class Main
 	 * @return {@link List}
 	 * @throws IOException ex
 	 */
+	@SuppressWarnings("unused")
 	private static List<String> findBundles() throws IOException
 	{
 		List<String> bundles = new ArrayList<>();
