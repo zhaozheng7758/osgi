@@ -14,7 +14,7 @@
 	<artifactId>osgi-maven</artifactId>
 	<packaging>bundle</packaging><!-- für OSGI eigentlich "bundle" -->
 
-	<name>${project.artifactId}</name>
+	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Beispiel von OSGI-Modulen mit Maven.</description>
 
 	<build>

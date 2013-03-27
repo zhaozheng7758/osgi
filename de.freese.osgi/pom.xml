@@ -15,7 +15,7 @@
 	<artifactId>osgi-parent</artifactId>
 	<packaging>pom</packaging>
 
-	<name>${project.artifactId}</name>
+	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Beispiel von OSGI-Modulen.</description>
 	<url>https://github.com/tfreese/osgi</url>
 	<inceptionYear>2012</inceptionYear>	

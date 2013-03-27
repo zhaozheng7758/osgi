@@ -14,7 +14,7 @@
 	<artifactId>osgi-slf4j</artifactId>
 	<packaging>jar</packaging>
 
-	<name>${project.artifactId}</name>
+	<name>${project.groupId}:${project.artifactId}</name>
 	<description>OSGI-Modul für SLF4J.</description>
 
 	<build>
