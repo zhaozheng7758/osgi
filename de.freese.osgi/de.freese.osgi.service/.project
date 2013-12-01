@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>target</name>
+			<type>2</type>
+			<locationURI>TARGET_DIR/de.freese.osgi-osgi-service</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
